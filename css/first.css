@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*all*/
+body{ background: url("../img/2.jpg") no-repeat center top;
+	  background-size:cover;
+	  -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+	  -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+	}
+html{ height: 100%;}
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;}
+
+/**/
+.sky{ margin: 0 auto; width: 500px; height: 100px; /*background: #000000;*/ color: #FFFFFF; position: absolute;
+		margin-left: 200px; margin-top: 200px;
+		font-size: 60px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.sky2{ margin: 0 auto; width: 600px; height: 100px; /*background: #000000;*/ color: #FFFFFF; position: absolute;
+		margin-left: 600px; margin-top: 400px;
+		font-size: 60px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.sky3{ margin: 0 auto; width: 100px; height: 100px; position: absolute;
+		margin-left: 900px; margin-top: 500px;
+		font-size: 84px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.sky3 a{ color: #FFFFFF;}
+.sky3 a:hover{ font-size: 84px; color: #4F59DB;}
+
+
+.sky4{ margin: 0 auto; width: 340px; height: 60px; position: absolute;
+		margin-left: 750px; margin-top: 320px;
+		font-size: 28px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.sky4 a{ color: rgba(0,0,0,0);}
+.sky4 a:hover{ font-size: 29px; color: #FFFFFF;}
+
+.sky5{ margin: 0 auto; width: 330px; height: 60px; position: absolute;
+		margin-left: 500px; margin-top: 320px;
+		font-size: 30px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px; color: #FFFFFF;}
+
+.one{ width:250px; height:56px; background-color:rgba(0,0,0,0.4);
+	  font-family:"Comic Sans MS", cursive; position:absolute; left:50%; margin-left:-125px; margin-top:25%;
+	  font-size:40px; text-align:center; border-radius:15px; padding:10px;}
+.one a{ color:#FFF;}
+.one:hover{ background:rgba(255,255,255,0.6);}
+
+.skyq{ margin: 0 auto; width: 500px; height: 100px; /*background: #000000;*/ color: #FFFFFF; position: absolute;
+		margin-left: 300px; margin-top: 160px;
+		font-size: 60px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.skyw{ margin: 0 auto; width: 500px; height: 100px; /*background: #000000;*/ color: #FFFFFF; position: absolute;
+		margin-left: 700px; margin-top: 160px;
+		font-size: 60px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.skye{ margin: 0 auto; width: 300px; height: 100px; /*background: #000000;*/ color: #FFFFFF; position: absolute;
+		margin-left: 80%; margin-top: 160px;
+		font-size: 60px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+
+.skyr{ margin: 0 auto; width: 800px; height: 100px; /*background: #000000;*/ color: #FFFFFF; position: absolute;
+		margin-left: 45%; margin-top: 240px;
+		font-size: 28px; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		letter-spacing:5px;}
+.spa{ width: 1200px; height: 1px; background: #FFFFFF; margin: 0 auto; position: absolute; margin-left: 210px; margin-top: 240px;}
+
+
+.two{ width:250px; height:56px; background-color:rgba(0,0,0,0.4);
+	  font-family:"Comic Sans MS", cursive; position:absolute; left:50%; margin-left:-125px; margin-top:500px;
+	  font-size:40px; text-align:center; border-radius:15px; padding:10px;}
+.two a{ color:#FFF;}
+.two:hover{ background:rgba(255,0,0,0.6);}
+
+
+
+.imga{ width: 310px; height: 300px; position: absolute; margin: 0 auto; margin-left:950px; margin-top: 400px;}
+.imga img{ width: 180px; height: 300px;}
+
+
+

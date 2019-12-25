@@ -1,0 +1,661 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Merry Christmas！！！</title>
+	<link href="css/first.css" rel="stylesheet" type="text/css">
+	
+	<style>
+
+            .space {
+                width: 400px;	/*框*/
+                height: 500px;
+				margin-left: 20px;
+				/*background: #FF0004;*/
+                float:left;
+                overflow: hidden;
+            }
+
+            .space .star {
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-radius: 50%;
+                background: #fff;
+                top: -50px;
+                left:200px;
+                position: relative;
+                transform-origin: 100% 0;
+                animation: star-ani 6s infinite ease-out;
+                box-shadow: 0 0 0px 0px rgba(255, 255, 255, .3);
+                opacity: 0;
+                z-index: 2;
+            }
+            .space .star:after {
+                content: '';
+                display: block;
+                top: -10px;
+                left: 200px;
+                border: 0px solid #fff;
+                border-width: 0px 95px 3px 95px;	/*修改流星长度*/
+                border-color: transparent transparent transparent #fff;
+                transform: rotate(-44deg) translate3d(1px, 3px, 0);
+                box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+                transform-origin: 0% 100%;
+                animation: shooting-ani 1s infinite ease-out;
+            }
+
+
+
+
+            .space .star1 {
+                top: -10px;
+                left: 300px;
+                background: #fff;
+                animation-delay: 0.5s;
+                -webkit-animation-delay:0.5s;
+                -moz-animation-delay: 0.5s;
+            }
+            .space .star1:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 0.5s;
+                -webkit-animation-delay:0.5s;
+                -moz-animation-delay: 0.5s;
+            }
+            .space .star2 {
+                top: 100px;
+                left: 200px;
+                background: #fff;
+                animation-delay: 0s;
+                -webkit-animation-delay:0s;
+                -moz-animation-delay: 0s;
+            }
+            .space .star2:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 0;
+                -webkit-animation-delay:0s;
+                -moz-animation-delay: 0s;
+            }
+            .space .star3 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space .star3:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay:1.5s;
+            }
+            .space .star4 {
+                top: 100px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space .star4:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay:1.5s;
+            }
+            .space .star5 {
+                top: 200px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space .star5:after {
+               border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+               -webkit-animation-delay: 1.5s;
+               -moz-animation-delay: 1.5s;
+            }
+            .space .star6 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space .star6:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+
+
+            .space .star7 {
+                top: 100px;
+                left: 200px;
+                background: #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space .star7:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space .star13 {
+                top: -10px;
+                left: 210px;
+                background: #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space .star13:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space .star14 {
+                top: -100px;
+                left: 150px;
+                background: #fff;
+                animation-delay: 2s;
+                -webkit-animation-delay:2s;
+                -moz-animation-delay: 2s;
+            }
+            .space .star14:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 2s;
+                -webkit-animation-delay:2s;
+                -moz-animation-delay: 2s;
+            }
+
+
+            .space .star15 {
+                top: 200px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 2.5s;
+                -webkit-animation-delay:2.5s;
+                -moz-animation-delay: 2.5s;
+            }
+            .space .star15:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 2.5s;
+                -webkit-animation-delay:2.5s;
+                -moz-animation-delay: 2.5s;
+            }
+            .space .star8 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay: 3s;
+                -moz-animation-delay: 3s;
+            }
+            .space .star8:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 3s;
+                -webkit-animation-delay: 3s;
+                -moz-animation-delay:3s;
+            }
+            .space .star9 {
+                top: 100px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 4s;
+                -webkit-animation-delay: 4s;
+                -moz-animation-delay: 4s;
+            }
+            .space .star9:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 4s;
+                -webkit-animation-delay: 4s;
+                -moz-animation-delay:4s;
+            }
+            .space .star10 {
+                top: 200px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space .star10:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space .star11 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space .star11:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space .star12 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 6s;
+                -webkit-animation-delay: 6s;
+                -moz-animation-delay: 6s;
+            }
+            .space .star12:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 6s;
+                -webkit-animation-delay: 6s;
+                -moz-animation-delay: 6s;
+            }
+            @keyframes star-ani {
+                0% {
+                    opacity: 0;
+                    transform: scale(0) rotate(0) translate3d(0, 0, 0);
+                    -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+                    -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                    -webkit-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                    -moz-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(1) rotate(0) translate3d(-400px, 300px, 0);
+                    -webkit-transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
+                    -moz-transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
+                }
+            }  
+		
+		
+		.space1 {
+                width: 200px;	/*框*/
+                height: 400px;
+				margin-left: 600px;margin-top: 200px;
+
+                float:left;
+                overflow: hidden;
+            }
+		
+		.space1 .star0 {
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-radius: 50%;
+                background: #fff;
+                top: -50px;
+                left:200px;
+                position: relative;
+                transform-origin: 100% 0;
+                animation: star-ani 6s infinite ease-out;
+                box-shadow: 0 0 0px 0px rgba(255, 255, 255, .3);
+                opacity: 0;
+                z-index: 2;
+            }
+            .space1 .star0:after {
+                content: '';
+                display: block;
+                top: -10px;
+                left: 200px;
+                border: 0px solid #fff;
+                border-width: 0px 130px 3px 130px;	/*修改流星长度*/
+                border-color: transparent transparent transparent #fff;
+                transform: rotate(-44deg) translate3d(1px, 3px, 0);
+                box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+                transform-origin: 0% 100%;
+                animation: shooting-ani 1s infinite ease-out;
+            }
+
+
+
+
+            .space1 .star11 {
+                top: -10px;
+                left: 300px;
+                background: #fff;
+                animation-delay: 0.5s;
+                -webkit-animation-delay:0.5s;
+                -moz-animation-delay: 0.5s;
+            }
+            .space1 .star11:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 0.5s;
+                -webkit-animation-delay:0.5s;
+                -moz-animation-delay: 0.5s;
+            }
+            .space1 .star22 {
+                top: 100px;
+                left: 200px;
+                background: #fff;
+                animation-delay: 0s;
+                -webkit-animation-delay:0s;
+                -moz-animation-delay: 0s;
+            }
+            .space1 .star22:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 0;
+                -webkit-animation-delay:0s;
+                -moz-animation-delay: 0s;
+            }
+            .space1 .star33 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space1 .star33:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay:1.5s;
+            }
+            .space1 .star44 {
+                top: 100px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space1 .star44:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay:1.5s;
+            }
+            .space1 .star55 {
+                top: 200px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space1 .star55:after {
+               border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+               -webkit-animation-delay: 1.5s;
+               -moz-animation-delay: 1.5s;
+            }
+            .space1 .star66 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+            .space1 .star66:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 1.5s;
+                -webkit-animation-delay: 1.5s;
+                -moz-animation-delay: 1.5s;
+            }
+
+
+            .space1 .star77 {
+                top: 100px;
+                left: 200px;
+                background: #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space1 .star77:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space1 .star1313 {
+                top: -10px;
+                left: 210px;
+                background: #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space1 .star1313:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay:3s;
+                -moz-animation-delay: 3s;
+            }
+            .space1 .star1414 {
+                top: -100px;
+                left: 150px;
+                background: #fff;
+                animation-delay: 2s;
+                -webkit-animation-delay:2s;
+                -moz-animation-delay: 2s;
+            }
+            .space1 .star1414:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 2s;
+                -webkit-animation-delay:2s;
+                -moz-animation-delay: 2s;
+            }
+
+
+            .space1 .star1515 {
+                top: 200px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 2.5s;
+                -webkit-animation-delay:2.5s;
+                -moz-animation-delay: 2.5s;
+            }
+            .space1 .star1515:after {
+                border-color: transparent transparent transparent #fff;
+                animation-delay: 2.5s;
+                -webkit-animation-delay:2.5s;
+                -moz-animation-delay: 2.5s;
+            }
+            .space1 .star88 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 3s;
+                -webkit-animation-delay: 3s;
+                -moz-animation-delay: 3s;
+            }
+            .space1 .star88:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 3s;
+                -webkit-animation-delay: 3s;
+                -moz-animation-delay:3s;
+            }
+            .space1 .star99 {
+                top: 100px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 4s;
+                -webkit-animation-delay: 4s;
+                -moz-animation-delay: 4s;
+            }
+            .space1 .star99:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 4s;
+                -webkit-animation-delay: 4s;
+                -moz-animation-delay:4s;
+            }
+            .space1 .star1010 {
+                top: 200px;
+                left: 250px;
+                background: #fff;
+                animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space1 .star1010:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space1 .star1111 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space1 .star1111:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                -moz-animation-delay: 5s;
+            }
+            .space1 .star1212 {
+                top: -10px;
+                left: 100px;
+                background: #fff;
+                animation-delay: 6s;
+                -webkit-animation-delay: 6s;
+                -moz-animation-delay: 6s;
+            }
+            .space1 .star1212:after {
+                border-color: transparent transparent transparent #fff;
+               animation-delay: 6s;
+                -webkit-animation-delay: 6s;
+                -moz-animation-delay: 6s;
+            }
+            @keyframes star-ani {
+                0% {
+                    opacity: 0;
+                    transform: scale(0) rotate(0) translate3d(0, 0, 0);
+                    -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+                    -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                    -webkit-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                    -moz-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(1) rotate(0) translate3d(-400px, 300px, 0);
+                    -webkit-transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
+                    -moz-transform: scale(1) rotate(0) translate3d(-400px, 400px, 0);
+                }
+            }
+        </style>
+	
+</head>
+
+<!--<script language = JavaScript>
+	function password()
+	{
+		var testV = 1;
+		var pass1 = prompt('那位出水芙蓉、婀娜多姿、秀外慧中、楚楚动人、天生丽质、国色天香、闭月羞花、倾国倾城、明眸皓齿，可爱与美丽并存的985小姐姐，你好呀~我有些话想对你说~，请问你愿意听嘛(*/ω＼*):', '');
+		while (testV < 3) 
+		{
+			if (!pass1) history.go(-1);
+			if (pass1 == "老公") 
+			{
+				
+				break;
+			}
+			testV += -1;
+			var pass1 = prompt('咦~~~叫人家句老公，人家就给你看了(*/ω＼*):');
+			
+		}
+		if (pass1 != "password" & testV == 3) history.go(-1);
+		var pass1 = prompt('人家还要亲亲(*/ω＼*):');
+		return 0;
+
+	}
+	document.write(password());
+</script>-->
+
+<body>
+	
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><bgsound src="横山克 - 私の嘘.mp3" loop="-1" /> </td></tr>
+</table>
+<map name="Map" id="Map"><area shape="rect" coords="3,2,949,829" href="main.html" />
+</map>
+	
+	<div class="space">
+            <div class="star"></div>
+            <div class="star star1"></div>
+            <div class="star star2"></div>
+            <div class="star star3"></div>
+            <div class="star star4"></div>
+            <div class="star star5"></div>
+            <div class="star star6"></div>
+            <div class="star star7"></div>
+            <div class="star star8"></div>
+            <div class="star star9"></div>
+            <div class="star star10"></div>
+            <div class="star star11"></div>
+            <div class="star star12"></div>
+            <div class="star star13"></div>
+            <div class="star star14"></div>
+            <div class="star star15"></div>
+        </div>
+	
+		<div class="space1">
+            <div class="star0"></div>
+            <div class="star star11"></div>
+            <div class="star star22"></div>
+            <div class="star star33"></div>
+            <div class="star star44"></div>
+            <div class="star star55"></div>
+            <div class="star star66"></div>
+            <div class="star star77"></div>
+            <div class="star star88"></div>
+            <div class="star star99"></div>
+            <div class="star star1010"></div>
+            <div class="star star1111"></div>
+            <div class="star star1212"></div>
+            <div class="star star1313"></div>
+            <div class="star star1414"></div>
+            <div class="star star1515"></div>
+        </div>
+	
+	
+		<div class="sky">The sky is blue,</div>
+		<div class="sky2">Like me and ... You</div>
+		<div class="sky3"><a href="second.html">›</a></div>
+		<div class="sky4"><a href="#">我...真的好喜欢你呀~</a></div>
+		<div class="sky5">你知不知道~</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
